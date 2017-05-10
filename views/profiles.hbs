@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{name}}</title>
+  </head>
+  <body>
+    <ul>
+      <li>{{name}}</li>
+      <li>Email: ({{email}})</li>
+      <li>Age: {{age}}</li>
+      <li>Add blog post:</li>
+      <li>
+        <form class="add" action="/addblog" method="post">
+          Title <input type="text" name="title" value="">
+          Content: <input type="text" name="content" value="">
+          <input type="hidden" name="id" value="{{user_id}}">
+          <button>Submit</button>
+        </form>
+      </li>
+    </ul>
+  </body>
+</html>

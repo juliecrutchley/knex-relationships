@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog of {{name}}</title>
+  </head>
+  <body>
+    <ul>
+      <li>Previous Blog Posts of {{name}}:</li>
+      <br>
+      {{#each posts}}
+        <li>Title: <a href= "/{{id}}/{{postId}}">{{title}}</a></li>
+      {{/each}}
+    </ul>
+  </body>
+</html>
